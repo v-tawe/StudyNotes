@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="aggressiveLazyLoading" value="false" />
+	</settings>
+	<typeAliases>
+		<package name="com.kyss.simple.model" />
+	</typeAliases>
+	<typeHandlers>
+<!--		<typeHandler javaType="com.kyss.simple.type.Enabled" handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"></typeHandler>-->
+		<typeHandler handler="com.kyss.simple.type.EnabledTypeHandler" javaType="com.kyss.simple.type.Enabled"></typeHandler>
+	</typeHandlers>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC">
+				<property name="" value="" />
+			</transactionManager>
+			<dataSource type="UNPOOLED">
+				<property name="driver"
+					value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+				<property name="url"
+					value="jdbc:sqlserver://proactivedbserver.database.windows.net:1433;database=mybatis2;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;" />
+				<property name="username" value="****@proactivedbserver" />
+				<property name="password" value="****" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/kyss/simple/mapper/CountryMapper.xml" />
+		<mapper resource="com/kyss/simple/mapper/UserMapper.xml" />
+		<mapper resource="com/kyss/simple/mapper/RoleMapper.xml" />
+<!--		<mapper resource="com/kyss/simple/mapper/PrivilegeMapper.xml" />-->
+<!--		<mapper class="com.kyss.simple.mapper.RoleMapper" />-->
+		<mapper class="com.kyss.simple.mapper.PrivilegeMapper" />
+		<package name="com.kyss.generator.mapper"/>
+<!--		<mapper resource="com/kyss/simple/mapper/RoleMapper.xml" />-->
+<!-- 		<package name="com.kyss.simple.mapper"></package> -->
+	</mappers>
+</configuration>

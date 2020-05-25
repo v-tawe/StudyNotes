@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kyss.simple.mapper.RoleMapper">
+    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="false"></cache>
+    <resultMap id="roleMap" type="com.kyss.simple.model.SysRole">
+        <id property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="enabled" column="enabled"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <resultMap id="rolePrivilegeMap" type="com.kyss.simple.model.SysRole" extends="roleMap">
+        <collection property="privilegeList" resultMap="com.kyss.simple.mapper.PrivilegeMapper.privilegeMap"
+                    columnPrefix="privilege_"></collection>
+    </resultMap>
+
+    <select id="selectById" resultMap="roleMap">
+		SELECT id, role_name, enabled, create_by, create_time FROM sys_role where id=#{id}
+	</select>
+
+    <select id="selectRolePrivilegeById" resultMap="rolePrivilegeMap">
+		SELECT r.id, r.role_name, r.enabled, r.create_by, r.create_time,
+		p.id privilege_id, p.privilege_name privilege_privilege_name, p.privilege_url privilege_privilege_url
+		FROM sys_role r
+		INNER JOIN sys_role_privilege rp ON r.id=rp.role_id
+		INNER JOIN sys_privilege p ON p.id=rp.privilege_id
+		where r.id=#{id}
+	</select>
+
+    <resultMap id="rolePrivilegeMap2" type="com.kyss.simple.model.SysRole" extends="roleMap">
+        <collection property="privilegeList" column="{role_id=id}"
+                    select="com.kyss.simple.mapper.PrivilegeMapper.selectByRoleId"></collection>
+    </resultMap>
+
+    <select id="selectByUserId" resultMap="rolePrivilegeMap2">
+        SELECT r.id, r.role_name, r.enabled, r.create_by, r.create_time
+        FROM sys_role r
+        INNER JOIN sys_user_role ur ON r.id=ur.role_id
+        WHERE ur.user_id=#{user_id}
+    </select>
+
+    <select id="selectRolePrivilegeById2" resultMap="rolePrivilegeMap2">
+		SELECT r.id, r.role_name, r.enabled, r.create_by, r.create_time,
+		rp.privilege_id
+		FROM sys_role r
+		INNER JOIN sys_role_privilege rp ON r.id=rp.role_id
+		where r.id=#{id}
+	</select>
+
+</mapper>

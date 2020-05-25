@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.kyss.simple.mapper.UserMapper">
+    <resultMap id="userMap" type="com.kyss.simple.model.SysUser">
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userInfo" column="user_info"/>
+        <result property="headImg" column="head_img"/>
+        <result property="createTime" column="create_time"
+                jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <select id="selectById" resultMap="userMap">
+		SELECT * FROM sys_user WHERE
+		id = #{id}
+	</select>
+    <select id="selectByUserName" resultType="com.kyss.simple.model.SysUser">
+        SELECT * FROM sys_user
+        <!--		<where>-->
+        <trim prefix="WHERE" prefixOverrides="AND | OR ">
+            <if test="userName != null and userName != ''">
+                AND user_name=#{userName}
+            </if>
+        </trim>
+        <!--		</where>-->
+    </select>
+    <select id="selectAll" resultMap="userMap">
+		SELECT * FROM sys_user WHERE
+		1=1
+	</select>
+    <select id="selectRolesByUserId"
+            resultType="com.kyss.simple.model.SysRole">
+		SELECT
+		r.id,
+		r.role_name,
+		r.enabled,
+		r.create_by,
+		r.create_time,
+		u.user_name AS "sysUser.userName",
+		u.user_email AS "sysUser.userEmail"
+		FROM sys_user u
+		INNER JOIN sys_user_role ur on
+		u.id=ur.user_id
+		INNER JOIN sys_role r on ur.role_id=r.id
+		WHERE
+		u.id=#{userId}
+	</select>
+
+    <insert id="insert">
+        <!-- SET IDENTITY_INSERT sys_user ON -->
+        INSERT INTO sys_user(user_name, user_password, user_email, user_info,
+        head_img, create_time)
+        VALUES(#{userName}, #{userPassword},
+        #{userEmail}, #{userInfo}, #{headImg}, #{createTime,
+		jdbcType=TIMESTAMP})
+        <!-- SET IDENTITY_INSERT sys_user OFF -->
+    </insert>
+    <insert id="insert2" useGeneratedKeys="true" keyProperty="id">
+		INSERT
+		INTO sys_user(user_name, user_password, user_email, user_info,
+		head_img, create_time)
+		VALUES(#{userName}, #{userPassword},
+		#{userEmail}, #{userInfo}, #{headImg}, #{createTime,
+		jdbcType=TIMESTAMP})
+	</insert>
+    <insert id="insert3">
+        INSERT
+        INTO sys_user(user_name, user_password, user_email, user_info,
+        head_img, create_time)
+        VALUES(#{userName}, #{userPassword},
+        #{userEmail}, #{userInfo}, #{headImg}, #{createTime,
+		jdbcType=TIMESTAMP})
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            SELECT @@IDENTITY
+            <!-- 			SELECT SCOPE_IDENTITY() -->
+        </selectKey>
+    </insert>
+
+    <update id="updateById">
+		UPDATE sys_user SET user_name = #{userName},
+			user_password = #{userPassword},
+			user_email = #{userEmail},
+			user_info = #{userInfo},
+			head_img = #{headImg},
+			create_time = #{createTime, jdbcType=TIMESTAMP}
+		WHERE id= #{id}
+	</update>
+
+    <delete id="deleteById">
+		DELETE FROM sys_user WHERE id=#{id}
+	</delete>
+
+    <select id="selectRolesByUserIdAndRoleEnabled" resultType="com.kyss.simple.model.SysRole">
+		SELECT
+		r.id,
+		r.role_name,
+		r.enabled,
+		r.create_by,
+		r.create_time,
+		u.user_name AS "sysUser.userName",
+		u.user_email AS "sysUser.userEmail"
+		FROM sys_user u
+		INNER JOIN sys_user_role ur on
+		u.id=ur.user_id
+		INNER JOIN sys_role r on ur.role_id=r.id
+		WHERE
+		u.id=#{sysUser.id} AND r.enabled = #{sysRole.enabled}
+	</select>
+
+	<update id="updateByMap">
+		UPDATE sys_user SET
+		<foreach collection="map" separator="," item="value" index="key">
+			${key}=#{value}
+		</foreach>
+		WHERE id=#{map.id}
+	</update>
+	<resultMap id="userRoleMap" type="com.kyss.simple.model.SysUser" extends="userMap">
+<!--		<association property="sysRole" columnPrefix="role_" javaType="com.kyss.simple.model.SysRole" resultMap="com.kyss.simple.mapper.RoleMapper.roleMap" fetchType="lazy" ></association>-->
+		<association property="sysRole" column="{id=role_id}" select="com.kyss.simple.mapper.RoleMapper.selectById" fetchType="lazy"></association>
+	</resultMap>
+
+	<select id="selectUserAndRoleById" resultMap="userRoleMap">
+		SELECT
+		u.id,
+		u.user_name,
+		u.user_email,
+		u.create_time,
+		ur.role_id
+		FROM sys_user u
+		INNER JOIN sys_user_role ur on
+		u.id=ur.user_id
+		WHERE
+		u.id=#{userId}
+	</select>
+
+	<resultMap id="userRoleListMap" type="com.kyss.simple.model.SysUser" extends="userMap">
+<!--		<collection property="roleList" columnPrefix="role_" resultMap="com.kyss.simple.mapper.RoleMapper.roleMap"></collection>-->
+		<collection property="roleList" column="{user_id=id}" select="com.kyss.simple.mapper.RoleMapper.selectByUserId"></collection>
+	</resultMap>
+
+	<select id="selectUserAndRoleById2" resultMap="userRoleListMap">
+		SELECT
+		u.id,
+		u.user_name,
+		u.user_email
+		FROM sys_user u
+		WHERE
+		u.id=#{userId}
+	</select>
+
+	<select id="selectUserAndRoleById3" resultMap="userRoleListMap">
+		SELECT
+		u.id,
+		u.user_name,
+		u.user_email,
+		ur.role_id,
+		r.role_name,
+		r.enabled role_enabled,
+		r.create_by role_create_by
+		FROM sys_user u
+		INNER JOIN sys_user_role ur on u.id=ur.user_id
+		INNER JOIN sys_role r on r.id=ur.role_id
+		WHERE
+		u.id=#{userId}
+	</select>
+	<!-- exec stored procedure -->
+	<select id="selectUserById" statementType="CALLABLE" useCache="false">
+		{
+			call select_user_by_id(
+				#{id, mode=IN},
+				#{userName, mode=OUT, jdbcType=VARCHAR},
+				#{userPassword, mode=OUT, jdbcType=VARCHAR},
+				#{userEmail, mode=OUT, jdbcType=VARCHAR},
+				#{userInfo, mode=OUT, jdbcType=VARCHAR},
+				#{headImg, mode=OUT, jdbcType=VARCHAR},
+				#{createTime, mode=OUT, jdbcType=TIMESTAMP}
+			)
+		}
+	</select>
+	<select id="selectUserPage" statementType="CALLABLE" useCache="false" resultMap="userMap">
+		{
+			call select_user_page(
+				#{userName, mode=IN},
+				#{offset, mode=IN},
+				#{limit, mode=IN},
+				#{total, mode=OUT, jdbcType=BIGINT}
+			)
+		}
+	</select>
+	<insert id="insertUserAndRoles" statementType="CALLABLE">
+		{
+			call insert_user_and_roles(
+				#{user.id, mode=OUT, jdbcType=BIGINT},
+				#{user.userName, mode=IN},
+				#{user.userPassword, mode=IN},
+				#{user.userEmail, mode=IN},
+				#{user.userInfo, mode=IN},
+				#{user.headImg, mode=IN},
+				#{user.createTime, mode=OUT, jdbcType=TIMESTAMP},
+				#{roleIds, mode=IN}
+			)
+		}
+	</insert>
+	<delete id="deleteUserById" statementType="CALLABLE">
+			{ call delete_user_by_id(#{id, mode=IN})}
+	</delete>
+</mapper>

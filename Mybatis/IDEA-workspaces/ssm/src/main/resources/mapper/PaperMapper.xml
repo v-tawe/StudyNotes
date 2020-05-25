@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.PaperDao">
+    <resultMap type="Paper" id="paperResultMap">
+        <id property="paperId" column="paper_id"/>
+        <result property="paperName" column="name" />
+        <result property="paperNum" column="number" />
+        <result property="paperDetail" column="detail" />
+    </resultMap>
+    <insert id="addPaper" parameterType="Paper" useGeneratedKeys="true" keyProperty="paperId" keyColumn="paper_id">
+--         SET IDENTITY_INSERT paper ON
+        INSERT INTO paper(name, number, detail) VALUES(#{paperName}, #{paperNum}, #{paperDetail})
+        <selectKey keyColumn="paper_id" resultType="long" keyProperty="paperId" order="AFTER">
+            SELECT @@IDENTITY
+        </selectKey>
+--         SET IDENTITY_INSERT paper OFF
+    </insert>
+
+    <delete id="deletePaperById" parameterType="long">
+        DELETE FROM paper WHERE paper_id=#{paperId}
+    </delete>
+
+    <update id="updatePaper" parameterType="Paper">
+        UPDATE paper SET name=#{paperName}, number=#{paperNum}, detail=#{paperDetail}
+        WHERE paper_id=#{paperId}
+    </update>
+
+    <select id="queryById" resultMap="paperResultMap" parameterType="long">
+        SELECT paper_id, name, number, detail FROM paper
+        WHERE paper_id=#{paperId}
+    </select>
+    <select id="queryAllPaper" resultMap="paperResultMap">
+        SELECT paper_id, name, number, detail FROM paper
+    </select>
+
+</mapper>
