@@ -176,7 +176,7 @@ a.forEach(function (element, index, array) {
 
 JavaScript 默认有一个全局对象 `window`，任何全局变量（函数也视为变量）都会绑定到 `window` 上。
 
-`var` - 定义**局部**作用域变量
+`var` - 定义**局部**作用域变量  
 `let` - 定于**块**级作用域变量
 
 ```javascript
@@ -590,7 +590,7 @@ parent.removeChild(parent.children[0]); // 删除节点 1
 1. 创建 `XMLHttpRequest` 对象；
 1. 设置 `onreadystatechange` 回调函数；
 1. 通过 `readyState === 4` 判断请求是否完成；
-1. 根据 `status === 2000` 判断是否成功响应；
+1. 根据 `status === 200` 判断是否成功响应；
 1. 调用 `open()` 方法, 参数1： `GET/POST`; 参数2： URL 地址； 参数3：是否异步（默认 true);
 1. 调用 `send()` 方法发送请求；
 
