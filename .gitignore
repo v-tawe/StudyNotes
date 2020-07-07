@@ -31,5 +31,15 @@ hs_err_pid*
 # Maven
 target/
 
+### Eclipse
+.settings/
+.project/
+.classpath
+.settings
+.project
+.factorypath
+
 # Azure DataBase settings
 application.properties
+Mybatis/IDEA-workspaces/simple/.classpath
+Mybatis/IDEA-workspaces/simple/.settings/org.eclipse.jdt.core.prefs

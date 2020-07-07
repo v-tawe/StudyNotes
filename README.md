@@ -18,5 +18,7 @@
 
 ## [尚硅谷视频学习 - Java EE](https://www.bilibili.com/video/BV1zE41197bw) <sup style="color:red">new</sup>
 
+- [Java 学习笔记](/JavaEE/)
+    - [Thread](/JavaEE/JavaSenior/Thread.md)
 
 ## [我的博客](https://v-tawe.github.io/)
