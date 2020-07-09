@@ -21,5 +21,8 @@
 - [Java 学习笔记](/JavaEE/)
     - [多线程](/JavaEE/JavaSenior/Thread.md)
     - [常用类](/JavaEE/JavaSenior/CommonClass.md)
+    - [注解](/JavaEE/JavaSenior/Annotation.md)
+    - [集合](/JavaEE/JavaSenior/Collection.md)
+    - [泛型](/JavaEE/JavaSenior/Generic.md)
 
 ## [我的博客](https://v-tawe.github.io/)
