@@ -15,3 +15,12 @@ Class 实例对应着一个运行时类，获取 Class 四种方式：
 - 获取属性 - `Class.getDeclaredField()`
 - 获取实例 - `Class.getDeclaredConstructor().newInstance()`
 - 访问私有属性 - `field.SetAccessible(true)`
+
+## 动态代理
+
+- 静态代理
+  通过 代理类 持有 被代理类的实例 通过 接口 实现
+- 动态代理
+  被代理类需要有接口
+  通过 Proxy.newProxyInstance(obj.getClass().getClassLoader(), obj.getClass().getInterfaces(),
+                new Proxy.InvocationHandler() {@override invoke(...)});
