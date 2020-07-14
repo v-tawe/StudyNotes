@@ -19,10 +19,15 @@
 ## [尚硅谷视频学习 - Java EE](https://www.bilibili.com/video/BV1zE41197bw) <sup style="color:red">new</sup>
 
 - [Java 学习笔记](/JavaEE/)
-    - [多线程](/JavaEE/JavaSenior/Thread.md)
-    - [常用类](/JavaEE/JavaSenior/CommonClass.md)
-    - [注解](/JavaEE/JavaSenior/Annotation.md)
-    - [集合](/JavaEE/JavaSenior/Collection.md)
-    - [泛型](/JavaEE/JavaSenior/Generic.md)
+    - [集合](/JavaEE/JavaSenior/Java1-Collection.md)
+    - [IO Stream](/JavaEE/JavaSenior/Java1-IOStream.md)
+    - [多线程](/JavaEE/JavaSenior/Java1-Thread.md)
+    - [注解](/JavaEE/JavaSenior/Java5-Annotation.md)
+    - [常用类](/JavaEE/JavaSenior/Java5-CommonClass.md)
+    - [泛型](/JavaEE/JavaSenior/Java5-Generic.md)
+    - [反射](/JavaEE/JavaSenior/Java1-Reflect.md)
+    - [Lambda](/JavaEE/JavaSenior/Java1-Lambda.md)
+    - [Stream API](/JavaEE/JavaSenior/Java1-Stream.md)
+    - [Java 9](/JavaEE/JavaSenior/Java9.md)
 
 ## [我的博客](https://v-tawe.github.io/)
