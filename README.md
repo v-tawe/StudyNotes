@@ -28,6 +28,6 @@
     - [反射](/JavaEE/JavaSenior/Java1-Reflect.md)
     - [Lambda](/JavaEE/JavaSenior/Java1-Lambda.md)
     - [Stream API](/JavaEE/JavaSenior/Java1-Stream.md)
-    - [Java 9](/JavaEE/JavaSenior/Java9.md)
+    - [Java 9 & 10](/JavaEE/JavaSenior/Java9&10.md)
 
 ## [我的博客](https://v-tawe.github.io/)

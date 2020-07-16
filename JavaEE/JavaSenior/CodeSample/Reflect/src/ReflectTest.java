@@ -37,7 +37,8 @@ class Demo {
     private int id;
     private String name;
 
-    public Demo() { }
+    public Demo() {
+    }
 
     public Demo(int id, String name) {
         this.id = id;
