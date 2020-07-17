@@ -1,13 +1,11 @@
 package com.kyss.demo;
 
+import com.mysql.cj.jdbc.Driver;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
-
-import com.mysql.jdbc.Driver;
 
 /**
  * @ClassName Demo
@@ -19,21 +17,21 @@ import com.mysql.jdbc.Driver;
 public class Demo {
 
     @Test
-    public void test1() throws SQLException, ClassNotFoundException, IOException {
+    public void test1() throws Exception {
 
         InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream("jdbc.properties");
         Properties props = new Properties();
         props.load(is);
 
         String url = props.getProperty("url");
-        String user = props.getProperty("user");
+        String user = props.getProperty("username");
         String password = props.getProperty("password");
-        String driver = props.getProperty("driver");
+        String driverStr = props.getProperty("driverClassName");
 
-        Class.forName(driver);
+        Class clazz = Class.forName(driverStr);
 
-//        Driver driver = (Driver) clazz.getDeclaredConstructor().newInstance();
-//        DriverManager.registerDriver(driver);
+        Driver driver = (Driver) clazz.getDeclaredConstructor().newInstance();
+        DriverManager.registerDriver(driver);
 
         Connection connection = DriverManager.getConnection(url, user, password);
         System.out.println(connection);
