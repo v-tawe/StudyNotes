@@ -35,16 +35,13 @@ remove([expr]) 			a.remove(b)  所有的a，是b的话就会删除	a.remove()删
 				$("#btn01").click(function(){
 					//创建一个"广州"节点,添加到#city下[appendTo()]
 					//子节点.appendTo(父节点)
-	
-					
-					
+					$("<li>广州</li>").appendTo("#city");
 				});
 				
 				
 				$("#btn02").click(function(){
 					//创建一个"广州"节点,添加到#city下[prependTo()]
-					
-					
+					$("<li>广州</li>").prependTo("#city");
 				});
 				
 				
@@ -52,7 +49,7 @@ remove([expr]) 			a.remove(b)  所有的a，是b的话就会删除	a.remove()删
 				$("#btn03").click(function(){
 					//将"广州"节点插入到#bj前面[insertBefore()]
 					//前边.insertBefore(后边的)
-					
+					$("<li>广州</li>").insertBefore("#bj");
 					
 				});
 				
@@ -60,21 +57,21 @@ remove([expr]) 			a.remove(b)  所有的a，是b的话就会删除	a.remove()删
 				$("#btn04").click(function(){
 					//将"广州"节点插入到#bj后面[insertAfter()]
 					//后边.insertAfter(前边的)
-					
+					$("<li>广州</li>").insertAfter($("#bj"));
 					
 				});
 				
 				$("#btn05").click(function(){
 					//使用"广州"节点替换#bj节点[replaceWith()]
 					//被替换的.replaceWith()
-					
-					
+					// $("<li>广州</li>").replaceWith("#bj");
+					$("#bj").replaceWith($("<li>广州</li>"));
 				});
 				
 				$("#btn06").click(function(){
 					//使用"广州"节点替换#bj节点[replaceAll()]
 					//新的节点.replaceAll(旧的节点)
-					
+					$("<li>广州</li>").replaceAll("#bj");
 					
 				});
 				
@@ -82,29 +79,26 @@ remove([expr]) 			a.remove(b)  所有的a，是b的话就会删除	a.remove()删
 					//删除#rl节点[remove()]
 					//$("ul").remove("#rl");
 					//$("#rl").remove();
-					
+					$("#rl").remove();
 					
 				});
 				
 				$("#btn08").click(function(){
 					//掏空#city节点[empty()]
-				
+					$("#city").empty();
 					
 				});
 				
 				$("#btn09").click(function(){
 					//读取#city内的HTML代码
-					
+					alert($("#city").html());
 				});
 				
 				$("#btn10").click(function(){
 					//设置#bj内的HTML代码
-					
+					$("#city").html("<li>广州</li>");
 					
 				});
-				
-				
-				
 			});
 			
 		

@@ -3,6 +3,36 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Untitled Document</title>
+		<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$(":button:eq(0)").click(function () {
+					$("#single").val(["s3"]);
+				});
+				$(":button:eq(1)").click(function () {
+					$("#multiple").val(["x2", "x4"]);
+				});
+				$(":button:eq(2)").click(function () {
+					$(":checkbox[name='c']").val(["check2", "check4"]);
+				});
+				$(":button:eq(3)").click(function () {
+					$(":radio").val(["radio2"]);
+				});
+				$(":button:eq(4)").click(function () {
+					let str="|"
+					$("#single").add("#multiple")
+							.add(":checkbox[name='c']:checked")
+							.add(":radio:checked")
+							.each(function () {
+						// str += this.value;
+								str += $(this).val();
+						str += " | ";
+					});
+					alert(str);
+				});
+
+			});
+		</script>
 	</head>
 	<body>
 		

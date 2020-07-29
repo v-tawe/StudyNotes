@@ -7,10 +7,16 @@
 		<script type="text/javascript">
 			$(function(){
 				//1. 点击所有的 p 节点, 能够弹出其对应的文本内容
-				
+				$("P").click(function () {
+					alert(this.innerText);
+				});
 				//2. 使第二个 table 隔行变色
-				
+				// $("table").children().find(":even").css("background", "red");
+				$("table:eq(1) tr:even").css("background","green");
 				//3. 点击 button, 弹出 checkbox 被选中的个数
+				$("button").click(function () {
+					alert($(":checkbox:checked").size());
+				});
 			});
 		</script>
 	</head>

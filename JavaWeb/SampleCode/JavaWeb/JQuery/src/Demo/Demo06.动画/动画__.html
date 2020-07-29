@@ -25,33 +25,35 @@
 		$(function(){
 			//显示   show()
 			$("#btn1").click(function(){
-				
+				$("#div1").show(1000);
 			});		
 			//隐藏  hide()
 			$("#btn2").click(function(){
-				
+				$("#div1").hide(1000);
 			});	
 			//切换   toggle()
 			$("#btn3").click(function(){
-				
+				$("#div1").toggle(2000, function () {
+					alert("toggle complete");
+				});
 			});	
 			
 			//淡入   fadeIn()
 			$("#btn4").click(function(){
-				
+				$("#div1").fadeIn(1000);
 			});	
 			//淡出  fadeOut()
 			$("#btn5").click(function(){
-				
+				$("#div1").fadeOut(1000);
 			});	
 			
 			//淡化到  fadeTo()
 			$("#btn6").click(function(){
-				
+				$("#div1").fadeTo(1000, 0.5);
 			});	
 			//淡化切换  fadeToggle()
 			$("#btn7").click(function(){
-				
+				$("#div1").fadeToggle(1000);
 			});	
 		})
 </script>

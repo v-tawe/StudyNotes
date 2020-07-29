@@ -6,7 +6,23 @@
 <script type="text/javascript"></script>
 <script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
 <script type="text/javascript">
+	window.onload = function() {
+		alert("window.onload");
+	}
 	//$(function(){}) 和  window.onload = function(){}的区别
+	$(function() {
+		alert("JQuery load");
+	})
+
+	$(window).load(function() {
+		alert("JQuery onload1");
+	})
+	$(window).load(function() {
+		alert("JQuery onload2");
+	})
+	window.onload = function () {
+		alert("window onload3");
+	}
 
 	
 	//1、导入jquery的.js文件
