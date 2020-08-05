@@ -1,0 +1,12 @@
+person:
+  id: 1
+  name: tawe
+  age: 30
+  list: [one,two,three]
+  map: {1: "first", 2: "second"}
+  children:
+    id: 1001
+    name: child
+    age: 3
+server:
+  port: 8082

@@ -296,7 +296,9 @@ arr.reduce( (x,y) => x * y; ) // 15
 ```javascript
 function counter (initial) {
     var x = initial || 0;
-    return function() return x ++;
+    return function() {
+        return x ++;
+    }
 }
 
 var c = conter(100);
