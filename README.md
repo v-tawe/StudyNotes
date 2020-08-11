@@ -5,18 +5,18 @@
 - [Git 学习笔记](/Z-Git/git_study_notes.md)
 - [SQL 学习笔记](/2-Database/SQL/sql_study_notes.md)
 - [JavaScript 学习笔记](/1-JavaWeb/JavaScript/javascript_study_notes.md)
-- [Node.js 学习笔记](/A-Nodejs/node_study_notes.md) - <sup style="color:grey">待续(学习至 web 开发处) </sup>
+- [Node.js 学习笔记](/A-Nodejs/node_study_notes.md) <sup style="color: grey;">待续(学习至 web 开发处) </sup>  
   [Node.js 示例代码](/A-Nodejs/sample_code)
 
 - [Java 学习笔记](/0-Java/java_study_notes.md)
 - [设计模式学习笔记](/0-Java/GOF23.md)
 
-## [小匠学习笔记](https://www.bilibili.com/video/BV1r4411r7au) <sup style="color:red">hot</sup>
+## [小匠学习笔记](https://www.bilibili.com/video/BV1r4411r7au) <sup style="color: red;">hot~~</sup>
 
  - 使用 Spring Boot + Thymeleaf 搭建 Community 提问社区
  - [完整源码 & 实现流程](https://github.com/v-tawe/community)
 
-## [尚硅谷视频学习 - Java EE](https://www.bilibili.com/video/BV1zE41197bw) <sup style="color:red">new</sup>
+## [尚硅谷视频学习 - Java EE](https://www.bilibili.com/video/BV1zE41197bw) <sup style="color: red;">new~~</sup>
 
 - [Java 基础](/0-Java/)
     - [Java 学习路线](0-Java/java_study_notes.md)
@@ -25,9 +25,9 @@
     - [正则表达式](/0-Java/Regex.md)
 
 - [JavaWeb](/1-JavaWeb/)
-    - [HTML & CSS](/1-JavaWeb/HTML_CSS) <sup style="color:grey">code</sup>
+    - [HTML & CSS](/1-JavaWeb/HTML_CSS) <sup style="color: grey;">code</sup>
     - [JavaScript](/1-JavaWeb/JavaScript/javascript_study_notes.md)
-    - [JQuery](/1-JavaWeb/JQuery) <sup style="color:grey">code</sup>
+    - [JQuery](/1-JavaWeb/JQuery) <sup style="color: grey;">code</sup>
     - [Servlet](/1-JavaWeb/Servlet/Servlet.md)
 
 - [数据库](/2-Database/)
@@ -49,8 +49,8 @@
     - [网络编程](/3-JavaSenior/NetworkProgram.md)
 
 - [Spring](/4-Spring/)
-    - [SpringMVC](/4-Spring/SpirngMVC)<sup style="color:grey">empty</sup>
-    - [SpringBoot](/4-Spring/SpringBoot)<sup style="color:grey">code</sup>
+    - [SpringMVC](/4-Spring/SpirngMVC) <sup style="color: grey;">empty</sup>
+    - [SpringBoot](/4-Spring/SpringBoot) <sup style="color: grey;">code</sup>
     - [SpringCloud](/4-Spring/SpringCloud/)
         - [RPC 框架 - Dubbo](/4-Spring/SpringCloud/Dubbo/Dubbo.md)
         - [注册中心 - Zookeeper](/4-Spring/SpringCloud/Zookeeper/Zookeeper.md)
