@@ -46,7 +46,7 @@ public class PaymentController {
         if (payment != null) {
             return new CommonResult(200, "查询成功, 端口号: " + port, payment);
         } else {
-            return new CommonResult(500, "查询失败，, 端口号: " + port, null);
+            return new CommonResult(500, "查询失败，数据库无该记录, 端口号: " + port,null);
         }
     }
 }
