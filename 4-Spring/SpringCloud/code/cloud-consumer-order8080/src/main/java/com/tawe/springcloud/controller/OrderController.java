@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -64,18 +65,21 @@ public class OrderController {
             log.info("*****" + service);
 
             // 保存 service 的信息
-            HashMap<String, String> serviceMap = new HashMap();
-            serviceMap.put("Service", service);
+            HashMap<String, ArrayList<HashMap<String, String>>> serviceMap = new HashMap();
             ResultMap.put(service, serviceMap);
+            ArrayList<HashMap<String, String>> instancesList = new ArrayList();
 
             // 发现 instance 的信息
             List<ServiceInstance> instances = discoveryClient.getInstances(service);
             instances.forEach(instance -> {
+                serviceMap.put(instance.getServiceId(), instancesList);
+                HashMap<String, String> instanceMap = new HashMap<>();
+                instancesList.add(instanceMap);
                 log.info("*****" + instance.getInstanceId() + " " + instance.getHost() + " " + instance.getUri() + " " + instance.getPort());
-                serviceMap.put("InstanceId", instance.getInstanceId());
-                serviceMap.put("Host", instance.getHost());
-                serviceMap.put("Uri", instance.getUri().toString());
-                serviceMap.put("Port", String.valueOf(instance.getPort()));
+                instanceMap.put("InstanceId", instance.getInstanceId());
+                instanceMap.put("Host", instance.getHost());
+                instanceMap.put("Uri", instance.getUri().toString());
+                instanceMap.put("Port", String.valueOf(instance.getPort()));
             });
 
         });
