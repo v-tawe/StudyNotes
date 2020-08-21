@@ -14,6 +14,22 @@ eureka:
     instance-id: order8080
     prefer-ip-address: true
 
+
 spring:
   application:
     name: cloud-order-service
+
+#    // 无法同时使用两个 注册中心 会报错
+#    // Field registration in org.springframework.cloud.client.serviceregistry
+#    // .ServiceRegistryAutoConfiguration$ServiceRegistryEndpointConfiguration required a single bean, but 2 were found:
+#    //	- eurekaRegistration: defined in BeanDefinition defined in class path resource
+#    //	[org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration
+#    //	.class]
+#    //	- consulRegistration: defined by method 'consulRegistration' in class path resource
+#    //	[org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]
+#  cloud:
+#    consul:
+#      host: localhost
+#      port: 8500
+#      discovery:
+#        service-name: ${spring.application.name}

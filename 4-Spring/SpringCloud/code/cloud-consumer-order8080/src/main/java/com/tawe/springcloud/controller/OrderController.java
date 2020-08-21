@@ -31,11 +31,14 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    // 单机版
+    // eureka - 单机版
 //    private static final String PAYMENT_URL = "http://localhost:8001";
 
-    // 集群
+    // eureka - 集群
     private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+
+    // consul - 单机
+    public static final String CONSUL_PAYMENT_URL = "http://consul-provider-payment";
 
     @Resource
     private DiscoveryClient discoveryClient;
@@ -75,7 +78,8 @@ public class OrderController {
                 serviceMap.put(instance.getServiceId(), instancesList);
                 HashMap<String, String> instanceMap = new HashMap<>();
                 instancesList.add(instanceMap);
-                log.info("*****" + instance.getInstanceId() + " " + instance.getHost() + " " + instance.getUri() + " " + instance.getPort());
+                log.info("*****" + instance.getInstanceId() + " " + instance.getHost() + " " + instance.getUri() + " "
+                        + instance.getPort());
                 instanceMap.put("InstanceId", instance.getInstanceId());
                 instanceMap.put("Host", instance.getHost());
                 instanceMap.put("Uri", instance.getUri().toString());
@@ -86,4 +90,18 @@ public class OrderController {
 
         return commonResult;
     }
+
+    // 无法同时使用两个 注册中心 会报错
+    // Field registration in org.springframework.cloud.client.serviceregistry
+    // .ServiceRegistryAutoConfiguration$ServiceRegistryEndpointConfiguration required a single bean, but 2 were found:
+    //	- eurekaRegistration: defined in BeanDefinition defined in class path resource
+    //	[org/springframework/cloud/netflix/eureka/EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration
+    //	.class]
+    //	- consulRegistration: defined by method 'consulRegistration' in class path resource
+    //	[org/springframework/cloud/consul/serviceregistry/ConsulAutoServiceRegistrationAutoConfiguration.class]
+
+//    @GetMapping("/consumer/consul/discovery")
+//    public CommonResult consulDiscovery() {
+//        return restTemplate.getForObject(CONSUL_PAYMENT_URL + "/payment/consul", CommonResult.class);
+//    }
 }
