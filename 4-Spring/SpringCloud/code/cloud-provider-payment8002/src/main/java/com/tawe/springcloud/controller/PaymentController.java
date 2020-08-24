@@ -49,4 +49,9 @@ public class PaymentController {
             return new CommonResult(500, "查询失败，数据库无该记录, 端口号: " + port,null);
         }
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return port;
+    }
 }

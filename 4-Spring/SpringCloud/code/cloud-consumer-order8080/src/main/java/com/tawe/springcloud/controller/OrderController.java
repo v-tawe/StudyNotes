@@ -3,6 +3,7 @@ package com.tawe.springcloud.controller;
 import com.netflix.discovery.shared.Applications;
 import com.tawe.springcloud.entities.CommonResult;
 import com.tawe.springcloud.entities.Payment;
+import com.tawe.springcloud.mylb.LoadBalancer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -42,6 +43,9 @@ public class OrderController {
 
     @Resource
     private DiscoveryClient discoveryClient;
+
+    @Resource
+    private LoadBalancer loadbalancer;
 
     @GetMapping("/consumer/payment/create")
     public CommonResult create(Payment payment) {
@@ -104,4 +108,17 @@ public class OrderController {
 //    public CommonResult consulDiscovery() {
 //        return restTemplate.getForObject(CONSUL_PAYMENT_URL + "/payment/consul", CommonResult.class);
 //    }
+
+
+    @GetMapping("/consumer/payment/lb")
+    public String getPaymentLB() {
+        List<ServiceInstance> instances = discoveryClient.getInstances("cloud-payment-service");
+
+        if (instances == null || instances.size() <= 0) {
+            return null;
+        }
+
+        ServiceInstance serviceInstance = loadbalancer.getInstance(instances);
+        return restTemplate.getForObject(serviceInstance.getUri() + "/payment/lb", String.class);
+    }
 }
