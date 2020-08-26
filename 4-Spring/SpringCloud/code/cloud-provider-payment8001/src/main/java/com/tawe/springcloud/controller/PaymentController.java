@@ -55,4 +55,14 @@ public class PaymentController {
         return port;
     }
 
+    @GetMapping("/payment/timeout")
+    public String getTimeout() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return port + "time out...";
+    }
+
 }

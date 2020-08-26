@@ -1,0 +1,32 @@
+server:
+  port: 8083
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+# OpenFeign 默认等待时间为 1s
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 10000
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+# 开启 Feign 日志
+logging:
+  level:
+    com.tawe.springboot.service.OrderHystrixService: debug

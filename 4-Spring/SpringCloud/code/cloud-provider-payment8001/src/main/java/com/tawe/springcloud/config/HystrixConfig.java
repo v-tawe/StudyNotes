@@ -1,29 +1,19 @@
-package com.tawe.springcloud;
+package com.tawe.springcloud.config;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
- * @ClassName com.tawe.springcloud.PaymentMain8001
+ * @ClassName HystrixConfig
  * @Description TODO
  * @Author davidt
- * @Date 8/19/2020 5:39 PM
+ * @Date 8/25/2020 3:39 PM
  * @Version 1.0
  **/
-
-@SpringBootApplication
-@EnableEurekaClient
-@EnableCircuitBreaker
-public class PaymentMain8002 {
-    public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8002.class, args);
-    }
-
+@Configuration
+public class HystrixConfig {
     @Bean
     public ServletRegistrationBean getServlet() {
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
