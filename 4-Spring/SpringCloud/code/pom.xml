@@ -23,6 +23,7 @@
         <module>cloud-gateway9527</module>
         <module>cloud-config3344</module>
         <module>cloud-config-client3355</module>
+        <module>cloud-config-client3366</module>
     </modules>
     <packaging>pom</packaging>
 
