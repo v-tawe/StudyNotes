@@ -19,7 +19,7 @@ public class CommonResult<T> {
     private String message;
     private T data;
 
-    private CommonResult(Integer code, String message) {
+    public CommonResult(Integer code, String message) {
         this(code, message, null);
     }
 }

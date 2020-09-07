@@ -1,6 +1,5 @@
 package com.tawe.springcloud.controller;
 
-import com.netflix.discovery.shared.Applications;
 import com.tawe.springcloud.entities.CommonResult;
 import com.tawe.springcloud.entities.Payment;
 import com.tawe.springcloud.mylb.LoadBalancer;

@@ -1,6 +1,8 @@
 package com.tawe.springcloud.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @ClassName Payment
@@ -10,6 +12,8 @@ import lombok.Data;
  * @Version 1.0
  **/
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Payment {
     private Long id;
     private String serial;

@@ -1,7 +1,6 @@
 package com.tawe.springcloud.controller;
 
 import com.tawe.springcloud.service.IMessageProvider;
-import org.aspectj.bridge.IMessage;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
