@@ -1,0 +1,7 @@
+2020-09-03 14:40:25,575|172.17.12.113|nacos-config-client-dev.yml|DEFAULT_GROUP|null|null|1599115225294|172.17.12.113|persist|pub|-1|dfeeeb6463afe0dbeaec08d8777a0912
+2020-09-03 14:40:25,686|172.17.12.113|nacos-config-client-dev.yml|DEFAULT_GROUP|null|null|1599115225294|172.17.12.113|notify|ok|388|172.17.12.113:8848
+2020-09-03 14:40:25,699|172.17.12.113|nacos-config-client-dev.yml|DEFAULT_GROUP|null|null|1599115225294|172.17.12.113|dump|ok|405|57
+2020-09-03 16:00:01,496|172.17.12.113|nacos-config-client.yml|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-09-03 16:00:01,555|172.17.12.113|nacos-config-client-dev.yml|DEFAULT_GROUP|null|unknown|1599115225294|pull|ok|4776261|127.0.0.1
+2020-09-03 16:04:04,523|172.17.12.113|nacos-config-client.yml|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1
+2020-09-03 16:04:04,533|172.17.12.113|nacos-config-client-dev.yml|DEFAULT_GROUP|null|unknown|1599115225294|pull|ok|5019239|127.0.0.1

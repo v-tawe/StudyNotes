@@ -1,0 +1,315 @@
+2020-09-03 14:37:19,916 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2020-09-03 14:37:19,917 INFO listen for service meta change
+
+2020-09-03 14:39:26,361 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2020-09-03 14:39:26,363 INFO listen for service meta change
+
+2020-09-03 15:19:47,702 INFO creating empty service public:DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:19:47,703 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":8401,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@sentinel-service","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:19:47,707 INFO creating empty service public:DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:19:47,734 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599117587706,"checksum":"d9e5147afe88eb07fe0539bc77e115e6","clusterMap":{},"empty":true}
+
+2020-09-03 15:19:47,734 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599117587707,"checksum":"d9e5147afe88eb07fe0539bc77e115e6","clusterMap":{},"empty":true}
+
+2020-09-03 15:19:47,754 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587649,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:19:47,762 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587707,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:19:47,763 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587707,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:19:47,772 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587707,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:19:47,773 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587707,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:19:47,773 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599117587707,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:32:00,807 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":9001,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@nacos-payment-provider
+
+2020-09-03 15:32:00,807 INFO creating empty service public:DEFAULT_GROUP@@nacos-payment-provider
+
+2020-09-03 15:32:00,807 INFO creating empty service public:DEFAULT_GROUP@@nacos-payment-provider
+
+2020-09-03 15:32:00,808 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-payment-provider","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599118320807,"checksum":"6bb5db59b7b58e039b0c716e28eb94c2","clusterMap":{},"empty":true}
+
+2020-09-03 15:32:00,808 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-payment-provider","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599118320807,"checksum":"6bb5db59b7b58e039b0c716e28eb94c2","clusterMap":{},"empty":true}
+
+2020-09-03 15:32:00,808 WARN cluster: DEFAULT not found, ip: {"ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:32:00,808 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-payment-provider, value: {"instanceList":[{"instanceId":"172.17.12.113#9001#DEFAULT#DEFAULT_GROUP@@nacos-payment-provider","ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:32:00,808 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#9001#DEFAULT#DEFAULT_GROUP@@nacos-payment-provider","ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:32:00,809 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-payment-provider, value: {"instanceList":[{"instanceId":"172.17.12.113#9001#DEFAULT#DEFAULT_GROUP@@nacos-payment-provider","ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:32:00,809 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-payment-provider, value: {"instanceList":[{"instanceId":"172.17.12.113#9001#DEFAULT#DEFAULT_GROUP@@nacos-payment-provider","ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:32:00,810 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-payment-provider, value: {"instanceList":[{"instanceId":"172.17.12.113#9001#DEFAULT#DEFAULT_GROUP@@nacos-payment-provider","ip":"172.17.12.113","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-payment-provider","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118320807,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:32:54,001 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@sentinel-service, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118339650,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-09-03 15:32:54,001 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@sentinel-service, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118339650,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-09-03 15:32:54,172 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[]}
+
+2020-09-03 15:32:54,173 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[]}
+
+2020-09-03 15:35:13,864 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":8401,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@sentinel-service","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:35:13,865 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118513865,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:35:13,865 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118513865,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:35:13,873 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118513865,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:35:13,874 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118513865,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:39:29,826 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@sentinel-service, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118739392,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-09-03 15:39:29,826 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@sentinel-service, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118739392,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-09-03 15:39:29,831 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[]}
+
+2020-09-03 15:39:29,831 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[]}
+
+2020-09-03 15:41:42,377 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":83,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@nacos-order-consumer","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@nacos-order-consumer
+
+2020-09-03 15:41:42,377 INFO creating empty service public:DEFAULT_GROUP@@nacos-order-consumer
+
+2020-09-03 15:41:42,378 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#83#DEFAULT#DEFAULT_GROUP@@nacos-order-consumer","ip":"172.17.12.113","port":83,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-order-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118902377,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:41:42,378 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-order-consumer, value: {"instanceList":[{"instanceId":"172.17.12.113#83#DEFAULT#DEFAULT_GROUP@@nacos-order-consumer","ip":"172.17.12.113","port":83,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-order-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118902377,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:41:42,380 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@nacos-order-consumer","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599118902377,"checksum":"82e66003e2d9d7193314568f58a36d06","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@nacos-order-consumer","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":false,"defIPPort":80}},"empty":false}
+
+2020-09-03 15:41:42,380 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@nacos-order-consumer, value: {"instanceList":[{"instanceId":"172.17.12.113#83#DEFAULT#DEFAULT_GROUP@@nacos-order-consumer","ip":"172.17.12.113","port":83,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@nacos-order-consumer","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599118902377,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:41:46,415 WARN namespace : public, [DEFAULT_GROUP@@sentinel-service] services are automatically cleaned
+
+2020-09-03 15:41:46,421 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599118769831,"checksum":"31515316bf5326a3c97f6293a9802663","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@sentinel-service","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"empty":true,"defIPPort":80}},"empty":true}
+
+2020-09-03 15:45:43,764 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":8401,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@sentinel-service","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:45:43,764 INFO creating empty service public:DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 15:45:43,764 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599119143764,"checksum":"d9e5147afe88eb07fe0539bc77e115e6","clusterMap":{},"empty":true}
+
+2020-09-03 15:45:43,765 WARN cluster: DEFAULT not found, ip: {"ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119143764,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2020-09-03 15:45:43,765 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119143764,"marked":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:45:43,765 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119143764,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:57:38,123 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119858123,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:58:01,595 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119881595,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 15:58:59,058 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599119939058,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2020-09-03 16:02:55,419 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@sentinel-service, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120144628,"marked":false,"app":"DEFAULT","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}
+
+2020-09-03 16:02:55,423 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[]}
+
+2020-09-03 16:04:14,446 WARN Exception while processing client beat time out.
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverMemberManager' defined in URL [jar:file:/E:/Study/StudyNotes/4-Spring/SpringCloud/Alibaba/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-core-1.3.2.jar!/com/alibaba/nacos/core/cluster/ServerMemberManager.class]: Unexpected exception during bean creation; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.servlet.ServletContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1112)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1101)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.servlet.ServletContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1644)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	... 32 common frames omitted
+2020-09-03 16:04:15,541 WARN Exception while processing client beat time out.
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'distroMapper' defined in URL [jar:file:/E:/Study/StudyNotes/4-Spring/SpringCloud/Alibaba/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-naming-1.3.2.jar!/com/alibaba/nacos/naming/core/DistroMapper.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMemberManager' defined in URL [jar:file:/E:/Study/StudyNotes/4-Spring/SpringCloud/Alibaba/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-core-1.3.2.jar!/com/alibaba/nacos/core/cluster/ServerMemberManager.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.servlet.ServletContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1112)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1101)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverMemberManager' defined in URL [jar:file:/E:/Study/StudyNotes/4-Spring/SpringCloud/Alibaba/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-core-1.3.2.jar!/com/alibaba/nacos/core/cluster/ServerMemberManager.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.servlet.ServletContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.servlet.ServletContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1644)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 37 common frames omitted
+2020-09-03 16:04:17,336 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57af006c has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1067)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1100)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-03 16:04:18,894 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57af006c has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1067)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1100)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-03 16:04:18,894 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57af006c has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1067)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1100)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-03 16:04:19,455 WARN Exception while processing client beat time out.
+
+java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57af006c has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1067)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1100)
+	at com.alibaba.nacos.core.utils.ApplicationUtils.getBean(ApplicationUtils.java:192)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.getDistroMapper(ClientBeatCheckTask.java:60)
+	at com.alibaba.nacos.naming.healthcheck.ClientBeatCheckTask.run(ClientBeatCheckTask.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-03 16:04:37,255 ERROR [HEALTH-CHECK] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2056)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2133)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.processTask(TcpSuperSenseProcessor.java:137)
+	at com.alibaba.nacos.naming.healthcheck.TcpSuperSenseProcessor.run(TcpSuperSenseProcessor.java:154)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-03 16:11:44,064 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2020-09-03 16:11:44,065 INFO listen for service meta change
+
+2020-09-03 16:12:05,916 INFO creating empty service public:DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 16:12:05,917 WARN [CLIENT-BEAT] The instance has been removed for health mechanism, perform data compensation operations, beat: {"load":0.0,"cpu":0.0,"rt":0.0,"qps":0.0,"mem":0.0,"port":8401,"ip":"172.17.12.113","serviceName":"DEFAULT_GROUP@@sentinel-service","cluster":"DEFAULT","weight":1.0,"ephemeral":true,"metadata":{"preserved.register.source":"SPRING_CLOUD"}}, serviceName: DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 16:12:05,923 INFO creating empty service public:DEFAULT_GROUP@@sentinel-service
+
+2020-09-03 16:12:05,944 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599120725924,"checksum":"d9e5147afe88eb07fe0539bc77e115e6","clusterMap":{},"empty":true}
+
+2020-09-03 16:12:05,944 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sentinel-service","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1599120725919,"checksum":"d9e5147afe88eb07fe0539bc77e115e6","clusterMap":{},"empty":true}
+
+2020-09-03 16:12:05,949 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725865,"marked":false,"app":"DEFAULT","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2020-09-03 16:12:05,954 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725865,"marked":false,"app":"DEFAULT","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2020-09-03 16:12:05,955 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725865,"marked":false,"app":"DEFAULT","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2020-09-03 16:12:05,966 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725923,"marked":false,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2020-09-03 16:12:05,967 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725923,"marked":false,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2020-09-03 16:12:05,968 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120725923,"marked":false,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2020-09-03 16:12:59,896 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120779895,"marked":false,"app":"DEFAULT","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2020-09-03 16:12:59,896 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sentinel-service, value: {"instanceList":[{"instanceId":"172.17.12.113#8401#DEFAULT#DEFAULT_GROUP@@sentinel-service","ip":"172.17.12.113","port":8401,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sentinel-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1599120779895,"marked":false,"app":"DEFAULT","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+

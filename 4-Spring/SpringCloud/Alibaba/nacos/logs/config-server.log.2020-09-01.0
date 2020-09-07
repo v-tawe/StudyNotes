@@ -1,0 +1,78 @@
+2020-09-01 15:03:16,104 INFO notifyConnectTimeout:200
+
+2020-09-01 15:03:16,107 INFO notifySocketTimeout:8000
+
+2020-09-01 15:03:16,107 INFO isHealthCheck:true
+
+2020-09-01 15:03:16,107 INFO maxHealthCheckFailCount:12
+
+2020-09-01 15:03:16,107 INFO maxContent:10485760
+
+2020-09-01 15:04:44,019 INFO notifyConnectTimeout:200
+
+2020-09-01 15:04:44,023 INFO notifySocketTimeout:8000
+
+2020-09-01 15:04:44,023 INFO isHealthCheck:true
+
+2020-09-01 15:04:44,023 INFO maxHealthCheckFailCount:12
+
+2020-09-01 15:04:44,023 INFO maxContent:10485760
+
+2020-09-01 15:04:58,997 INFO notifyConnectTimeout:200
+
+2020-09-01 15:04:58,999 INFO notifySocketTimeout:8000
+
+2020-09-01 15:04:58,999 INFO isHealthCheck:true
+
+2020-09-01 15:04:59,002 INFO maxHealthCheckFailCount:12
+
+2020-09-01 15:04:59,002 INFO maxContent:10485760
+
+2020-09-01 15:14:59,607 INFO notifyConnectTimeout:200
+
+2020-09-01 15:14:59,610 INFO notifySocketTimeout:8000
+
+2020-09-01 15:14:59,610 INFO isHealthCheck:true
+
+2020-09-01 15:14:59,610 INFO maxHealthCheckFailCount:12
+
+2020-09-01 15:14:59,610 INFO maxContent:10485760
+
+2020-09-01 15:15:49,856 INFO notifyConnectTimeout:200
+
+2020-09-01 15:15:49,859 INFO notifySocketTimeout:8000
+
+2020-09-01 15:15:49,859 INFO isHealthCheck:true
+
+2020-09-01 15:15:49,859 INFO maxHealthCheckFailCount:12
+
+2020-09-01 15:15:49,859 INFO maxContent:10485760
+
+2020-09-01 15:15:53,585 INFO use local db service for init
+
+2020-09-01 15:15:54,779 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2020-09-01 15:15:54,783 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2020-09-01 15:15:55,355 INFO use StandaloneDatabaseOperateImpl
+
+2020-09-01 15:15:56,619 WARN DumpService start
+
+2020-09-01 15:15:56,620 INFO start clear all config-info.
+
+2020-09-01 15:15:56,624 WARN clear all config-info failed.
+
+2020-09-01 15:15:56,624 WARN clear all config-info-tenant failed.
+
+2020-09-01 15:15:56,677 INFO start clear all config-info-beta.
+
+2020-09-01 15:15:56,677 WARN clear all config-info-beta failed.
+
+2020-09-01 15:15:56,677 WARN clear all config-info-beta-tenant failed.
+
+2020-09-01 15:15:56,687 INFO start clear all config-info-tag.
+
+2020-09-01 15:15:56,688 WARN clear all config-info-tag failed.
+
+2020-09-01 15:15:56,688 WARN clear all config-info-tag-tenant failed.
+

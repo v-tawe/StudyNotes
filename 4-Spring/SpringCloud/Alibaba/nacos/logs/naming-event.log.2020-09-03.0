@@ -1,0 +1,102 @@
+2020-09-03 14:37:32,484 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2020-09-03 15:19:47,764 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:19:47,769 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:19:47,772 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:19:47,772 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:19:47,773 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:19:47,773 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:32:00,809 INFO DEFAULT_GROUP@@nacos-payment-provider {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:9001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:32:00,809 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-payment-provider, ips: 172.17.12.113:9001_true,
+
+2020-09-03 15:32:00,809 INFO DEFAULT_GROUP@@nacos-payment-provider {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:9001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:32:00,809 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-payment-provider, ips: 172.17.12.113:9001_true,
+
+2020-09-03 15:32:00,810 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-payment-provider, ips: 172.17.12.113:9001_true,
+
+2020-09-03 15:32:00,810 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-payment-provider, ips: 172.17.12.113:9001_true,
+
+2020-09-03 15:32:38,968 INFO {POS} {IP-DISABLED} valid: 172.17.12.113:8401@DEFAULT@DEFAULT_GROUP@@sentinel-service, region: unknown, msg: client timeout after 15000, last beat: 1599118339650
+
+2020-09-03 15:32:38,968 INFO {POS} {IP-DISABLED} valid: 172.17.12.113:8401@DEFAULT@DEFAULT_GROUP@@sentinel-service, region: unknown, msg: client timeout after 15000, last beat: 1599118339650
+
+2020-09-03 15:32:54,172 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-09-03 15:32:54,173 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 
+
+2020-09-03 15:32:54,173 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-09-03 15:32:54,173 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 
+
+2020-09-03 15:35:13,865 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:35:13,865 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:35:13,873 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:35:13,873 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:35:13,874 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:35:13,874 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:39:14,797 INFO {POS} {IP-DISABLED} valid: 172.17.12.113:8401@DEFAULT@DEFAULT_GROUP@@sentinel-service, region: unknown, msg: client timeout after 15000, last beat: 1599118739392
+
+2020-09-03 15:39:29,831 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-09-03 15:39:29,831 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 
+
+2020-09-03 15:39:29,831 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-09-03 15:39:29,831 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 
+
+2020-09-03 15:41:42,378 INFO DEFAULT_GROUP@@nacos-order-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:83:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:41:42,378 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-order-consumer, ips: 172.17.12.113:83_true,
+
+2020-09-03 15:41:42,381 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@nacos-order-consumer, ips: 172.17.12.113:83_true,
+
+2020-09-03 15:45:43,765 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 15:45:43,765 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:45:43,765 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:57:38,123 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:58:01,595 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 15:58:59,058 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:02:40,384 INFO {POS} {IP-DISABLED} valid: 172.17.12.113:8401@DEFAULT@DEFAULT_GROUP@@sentinel-service, region: unknown, msg: client timeout after 15000, last beat: 1599120144628
+
+2020-09-03 16:02:55,423 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-09-03 16:02:55,423 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 
+
+2020-09-03 16:04:28,181 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2020-09-03 16:12:05,956 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 16:12:05,962 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:12:05,967 INFO DEFAULT_GROUP@@sentinel-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.17.12.113:8401:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-03 16:12:05,967 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:12:05,967 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:12:05,968 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:12:59,896 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+
+2020-09-03 16:12:59,897 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@sentinel-service, ips: 172.17.12.113:8401_true,
+

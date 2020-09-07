@@ -1,0 +1,86 @@
+2020-09-03 14:36:59,226 INFO notifyConnectTimeout:200
+
+2020-09-03 14:36:59,237 INFO notifySocketTimeout:8000
+
+2020-09-03 14:36:59,237 INFO isHealthCheck:true
+
+2020-09-03 14:36:59,237 INFO maxHealthCheckFailCount:12
+
+2020-09-03 14:36:59,237 INFO maxContent:10485760
+
+2020-09-03 14:36:59,238 INFO spring.datasource.platform:mysql
+
+2020-09-03 14:37:20,064 WARN DumpService start
+
+2020-09-03 14:37:20,065 INFO start clear all config-info.
+
+2020-09-03 14:37:20,074 WARN clear all config-info failed.
+
+2020-09-03 14:37:20,074 WARN clear all config-info-tenant failed.
+
+2020-09-03 14:39:19,843 INFO notifyConnectTimeout:200
+
+2020-09-03 14:39:19,847 INFO notifySocketTimeout:8000
+
+2020-09-03 14:39:19,847 INFO isHealthCheck:true
+
+2020-09-03 14:39:19,850 INFO maxHealthCheckFailCount:12
+
+2020-09-03 14:39:19,850 INFO maxContent:10485760
+
+2020-09-03 14:39:19,851 INFO spring.datasource.platform:mysql
+
+2020-09-03 14:39:26,521 WARN DumpService start
+
+2020-09-03 14:39:26,526 INFO start clear all config-info.
+
+2020-09-03 14:39:26,533 WARN clear all config-info failed.
+
+2020-09-03 14:39:26,534 WARN clear all config-info-tenant failed.
+
+2020-09-03 14:39:26,572 INFO start clear all config-info-beta.
+
+2020-09-03 14:39:26,572 WARN clear all config-info-beta failed.
+
+2020-09-03 14:39:26,572 WARN clear all config-info-beta-tenant failed.
+
+2020-09-03 14:39:26,574 INFO start clear all config-info-tag.
+
+2020-09-03 14:39:26,574 WARN clear all config-info-tag failed.
+
+2020-09-03 14:39:26,574 WARN clear all config-info-tag-tenant failed.
+
+2020-09-03 16:11:38,319 INFO notifyConnectTimeout:200
+
+2020-09-03 16:11:38,323 INFO notifySocketTimeout:8000
+
+2020-09-03 16:11:38,323 INFO isHealthCheck:true
+
+2020-09-03 16:11:38,324 INFO maxHealthCheckFailCount:12
+
+2020-09-03 16:11:38,324 INFO maxContent:10485760
+
+2020-09-03 16:11:38,324 INFO spring.datasource.platform:mysql
+
+2020-09-03 16:11:44,168 WARN DumpService start
+
+2020-09-03 16:11:44,169 INFO start clear all config-info.
+
+2020-09-03 16:11:44,176 INFO clear all config-info success.
+
+2020-09-03 16:11:44,176 WARN clear all config-info-tenant failed.
+
+2020-09-03 16:11:44,203 INFO [all-dump] 1 / 1
+
+2020-09-03 16:11:44,203 INFO start clear all config-info-beta.
+
+2020-09-03 16:11:44,204 WARN clear all config-info-beta failed.
+
+2020-09-03 16:11:44,204 WARN clear all config-info-beta-tenant failed.
+
+2020-09-03 16:11:44,210 INFO start clear all config-info-tag.
+
+2020-09-03 16:11:44,210 WARN clear all config-info-tag failed.
+
+2020-09-03 16:11:44,211 WARN clear all config-info-tag-tenant failed.
+

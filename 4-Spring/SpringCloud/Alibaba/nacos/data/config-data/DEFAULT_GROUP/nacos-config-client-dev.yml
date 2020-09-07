@@ -1,0 +1,2 @@
+config: 
+  info: nacos-config-client-dev.yml version : 1
