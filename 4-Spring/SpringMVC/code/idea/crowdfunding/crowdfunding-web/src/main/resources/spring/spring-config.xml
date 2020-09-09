@@ -19,13 +19,13 @@
     </context:component-scan>
 
     <!--Spring 配置文件加载-->
-    <context:property-placeholder location="classpath:database-config.properties"/>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <!--MySQL 数据源-->
     <!--使用 Druid 连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="url" value="${jdbc.url}"/>
-        <property name="driver" value="${jdbc.driver}"/>
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
     </bean>
@@ -34,12 +34,17 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
         <property name="dataSource" ref="dataSource"/>
-        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:mapper/*.xml</value>
+            </list>
+        </property>
     </bean>
 
     <!--将 MyBatis Dao 接口加入 IOC 容器-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.tawe.crowdfunding.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
     <!--事务控制-->
@@ -50,7 +55,7 @@
     <!--开启基于注解的事务控制-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="*"/>
+            <tx:method name="*" propagation="REQUIRED" isolation="DEFAULT" rollback-for="java.lang.Exception"/>
             <tx:method name="get" read-only="true"/>
         </tx:attributes>
     </tx:advice>

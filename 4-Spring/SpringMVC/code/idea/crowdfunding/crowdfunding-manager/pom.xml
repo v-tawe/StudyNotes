@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.tawe</groupId>
             <artifactId>crowdfunding-common</artifactId>
-            <version>${version}</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

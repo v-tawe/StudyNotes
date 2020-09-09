@@ -9,7 +9,7 @@
     <!-- 需要 ContextLoaderListener -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring/spring-*.xml</param-value>
+        <param-value>classpath:spring/spring-config.xml</param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
