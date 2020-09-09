@@ -43,3 +43,6 @@ target/
 application.properties
 Mybatis/IDEA-workspaces/simple/.classpath
 Mybatis/IDEA-workspaces/simple/.settings/org.eclipse.jdt.core.prefs
+
+# nacos logs
+*.log.*
