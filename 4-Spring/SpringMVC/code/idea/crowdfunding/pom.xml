@@ -14,7 +14,6 @@
         <module>crowdfunding-manager</module>
         <module>crowdfunding-portal</module>
         <module>crowdfunding-web</module>
-        <module>crowdfunding-webapp</module>
     </modules>
 
 

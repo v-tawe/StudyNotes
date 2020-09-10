@@ -14,7 +14,7 @@
             http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--添加 Spring 全局扫描 - 排除 Controller 扫描 交给 SpringMVC-->
-    <context:component-scan base-package="com.tawe.crowdfunding">
+    <context:component-scan base-package="com.tawe.crowdfunding.*">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 

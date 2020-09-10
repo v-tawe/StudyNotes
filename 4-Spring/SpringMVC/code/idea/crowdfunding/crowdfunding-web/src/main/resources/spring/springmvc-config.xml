@@ -13,7 +13,7 @@
 
     <!-- 添加 SpringMVC 扫描 - 仅扫描 Controller-->
     <!-- Controller 由 SpringMVC 来管理扫描, 所以 Controller 要在 Spring 扫描中排除-->
-    <context:component-scan base-package="com.tawe.crowdfunding" use-default-filters="false">
+    <context:component-scan base-package="com.tawe.crowdfunding.*" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
