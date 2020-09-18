@@ -18,7 +18,7 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <!--Spring 配置文件加载-->
+    <!--数据库参数配置文件加载-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <!--MySQL 数据源-->
