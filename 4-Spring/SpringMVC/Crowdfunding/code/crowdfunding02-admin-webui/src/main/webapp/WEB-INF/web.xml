@@ -4,4 +4,78 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!--配置ContextLoaderListener加载Spring配置文件-->
+  <!--needed for ContextLoaderListener-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:spring-persist-*.xml</param-value>
+  </context-param>
+  <!--Bootstraps the root web application context before servlet initialization-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <!--配置CharacterEncodingFilter解决POST请求的字符乱码问题-->
+  <filter>
+    <filter-name>characterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+
+    <!--指定字符集-->
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+
+    <!--强制请求进行编码-->
+    <init-param>
+      <param-name>forceRequestEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <!--强制响应进行编码-->
+    <init-param>
+      <param-name>forceResponseEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!--配置SpringMVC的前端控制器-->
+  <servlet>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+    <!--以初始化参数的形式指定SpringMVC配置文件的位置-->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring-web-mvc.xml</param-value>
+    </init-param>
+    <!--让DispatcherServlet在Web应用启动时创建对象、初始化-->
+    <!--默认情况：Servlet在第一次请求的时候创建对象、初始化-->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <!--DispatcherServlet映射的URL地址-->
+    <!--大白话：什么样的访问地址会交给SpringMVC来处理-->
+    <!--配置方式一：符合RESTFUL风格使用-->
+    <!--<url-pattern>/</url-pattern>-->
+
+    <!--配置方式二：请求扩展名-->
+    <!--使用伪静态方式发起请求, 表面上看起来是一个访问静态资源的请求，但是实际上是由SpringMVC交给handler来处理的动态资源。-->
+    <!--好处1：有利于SEO优化-->
+    <!--好处2：隐藏后端技术实现细节-->
+    <!--好处3：自动解决静态资源访问问题-->
+    <!--缺陷：不符合RESTFUL风格-->
+    <url-pattern>*.html</url-pattern>
+    <!--通过 *.html 发起请求 返回 JSON 格式数据时 请求扩展名和响应体的数据格式不匹配！！-->
+    <!--如果不配置另外配置 *.json Spring 会给出 406 HttpErrorCode-->
+    <url-pattern>*.json</url-pattern>
+  </servlet-mapping>
+
+
+
 </web-app>

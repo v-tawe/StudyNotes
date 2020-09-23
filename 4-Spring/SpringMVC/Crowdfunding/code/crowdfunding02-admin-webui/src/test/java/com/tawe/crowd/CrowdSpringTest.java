@@ -2,6 +2,7 @@ package com.tawe.crowd;
 
 import com.tawe.crowd.dao.AdminMapper;
 import com.tawe.crowd.entity.Admin;
+import com.tawe.crowd.service.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ import java.util.Calendar;
 // 指定 Spring 给 Junit 提供的运行器
 @RunWith(SpringJUnit4ClassRunner.class)
 // 加载 Spring 配置文件
-@ContextConfiguration(locations = {"classpath:spring-persist-mybatis.xml"})
+@ContextConfiguration(locations = {"classpath:spring-persist-mybatis.xml", "classpath:spring-persist-tx.xml"})
 public class CrowdSpringTest {
 
     @Autowired
@@ -33,6 +34,20 @@ public class CrowdSpringTest {
 
     @Autowired
     private AdminMapper adminMapper;
+
+    @Autowired
+    private AdminService adminService;
+
+    @Test
+    public void testTx() {
+        Admin admin = new Admin();
+        admin.setLoginAcct("lisi");
+        admin.setUserName("李四");
+        admin.setUserPswd("abcdefg");
+        admin.setEmail("lisi@tawe.com");
+        admin.setCreateTime(new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime()));
+        adminService.save(admin);
+    }
 
     @Test
     public void testDataSource() throws SQLException {
@@ -57,16 +72,6 @@ public class CrowdSpringTest {
         admin.setUserPswd("123456");
         admin.setEmail("zhangsan@tawe.com");
         admin.setCreateTime(new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime()));
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        // adminMapper.insert(admin);
-        //
         int i = adminMapper.insert(admin);
         System.out.println(i);
     }
