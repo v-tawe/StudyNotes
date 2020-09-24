@@ -9,6 +9,9 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <%--<script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>--%>
     <script type="text/javascript">
+        // 将 JSON 数组转换为 JSON 字符串
+        let array = [1, 10, 20];
+        let arrayStr = JSON.stringify(array);
         $(function () {
             $("#testAjax").click(function () {
                 let id=JSON.stringify({"id":1});
@@ -19,13 +22,13 @@
                     // data: {
                     //     id: 1
                     // },
-                    data: id,
+                    data: arrayStr,
                     contentType: "application/json;charset=UTF-8",
-                    success: function (data) {
-                        alert(data);
+                    success: function (response) {
+                        alert(response.data);
                     },
                     error: function (error) {
-                        alert(error);
+                        alert(error.message);
                     }
                 })
             })

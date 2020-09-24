@@ -1,10 +1,13 @@
 package com.tawe.crowd.mvc.controller;
 
+import com.tawe.crowd.customize.exception.LoginFailedException;
 import com.tawe.crowd.entity.Admin;
 import com.tawe.crowd.service.AdminService;
+import com.tawe.crowd.util.ResultEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -26,15 +29,20 @@ public class AdminController {
     private AdminService adminService;
 
     @RequestMapping("test/ssm.html")
-    public String ssmIndex(ModelMap modelMap) {
+    public String ssmIndex(ModelMap modelMap) throws LoginFailedException {
         List<Admin> admins = adminService.selectAll();
         modelMap.addAttribute("admins", admins);
-        return "target";
+        throw new LoginFailedException();
+        // return "target";
     }
 
     @ResponseBody
     @RequestMapping("test/ajax.json")
-    public Admin getUserById(@RequestParam("id") Integer id) {
-        return adminService.selectById(id);
+    public ResultEntity<List<Admin>> getUserById(@RequestBody Integer[] ids) {
+        List<Admin> admins = new ArrayList<>();
+        for (Integer id : ids) {
+            admins.add(adminService.selectById(id));
+        }
+        return ResultEntity.succeededWithData(admins);
     }
 }

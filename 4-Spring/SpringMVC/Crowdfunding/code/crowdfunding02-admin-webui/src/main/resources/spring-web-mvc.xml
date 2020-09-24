@@ -23,4 +23,16 @@
     <!--启用SpringMVC注解驱动-->
     <mvc:annotation-driven/>
 
+    <!--配置基于 XML 的异常映射-->
+    <!--<mvc:view-controller path="/test/testA.html" view-name="target"/>-->
+    <bean id="simpleMappingExceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!--指定异常类型和逻辑视图名称的对应关系-->
+        <property name="exceptionMappings">
+            <props>
+                <!--Key 属性指定异常类型-->
+                <!--文本标签指定对应的逻辑视图名称-->
+                <prop key="java.lang.Exception">system-error</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
