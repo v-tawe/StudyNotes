@@ -24,7 +24,6 @@
 <div class="container" style="text-align: center">
     <h3>系统信息页面</h3>
     <h4>${pageContext.exception.message}</h4>
-    <h4>${requestScope.exception.message}</h4>
     <button style="width: 300px; margin: 0 auto 0 auto;" class="btn btn-lg btn-success btn-block">返回上一页</button>
 </div>
 </body>

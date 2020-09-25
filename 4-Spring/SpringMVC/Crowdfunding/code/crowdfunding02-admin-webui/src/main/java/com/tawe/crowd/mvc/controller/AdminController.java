@@ -1,6 +1,7 @@
 package com.tawe.crowd.mvc.controller;
 
 import com.tawe.crowd.customize.exception.LoginFailedException;
+import com.tawe.crowd.customize.exception.SystemErrorException;
 import com.tawe.crowd.entity.Admin;
 import com.tawe.crowd.service.AdminService;
 import com.tawe.crowd.util.ResultEntity;
@@ -32,8 +33,18 @@ public class AdminController {
     public String ssmIndex(ModelMap modelMap) throws LoginFailedException {
         List<Admin> admins = adminService.selectAll();
         modelMap.addAttribute("admins", admins);
+        // throw new LoginFailedException();
+        return "target";
+    }
+
+    @RequestMapping("test/login_exception.html")
+    public String testException() throws LoginFailedException {
         throw new LoginFailedException();
-        // return "target";
+    }
+
+    @RequestMapping("test/sys_exception.html")
+    public String testSystemErrorException() throws SystemErrorException {
+        throw new SystemErrorException("system error message!");
     }
 
     @ResponseBody

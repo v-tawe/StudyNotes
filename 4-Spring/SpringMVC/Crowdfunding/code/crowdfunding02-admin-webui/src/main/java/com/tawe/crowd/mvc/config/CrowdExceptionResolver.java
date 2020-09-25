@@ -3,6 +3,7 @@ package com.tawe.crowd.mvc.config;
 import com.google.gson.Gson;
 import com.tawe.crowd.constant.CrowdConstant;
 import com.tawe.crowd.customize.exception.LoginFailedException;
+import com.tawe.crowd.customize.exception.SystemErrorException;
 import com.tawe.crowd.util.CrowdUtil;
 import com.tawe.crowd.util.ResultEntity;
 import org.springframework.http.RequestEntity;
@@ -29,6 +30,12 @@ public class CrowdExceptionResolver {
     @ExceptionHandler(LoginFailedException.class)
     public ModelAndView resolveLoginFailedException(LoginFailedException e, HttpServletRequest request, HttpServletResponse response) throws IOException {
         String viewName = "admin-login";
+        return resolveException(e, request, response, viewName);
+    }
+
+    @ExceptionHandler(SystemErrorException.class)
+    public ModelAndView resolveSystemErrorException(LoginFailedException e, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String viewName = "system-error";
         return resolveException(e, request, response, viewName);
     }
 
