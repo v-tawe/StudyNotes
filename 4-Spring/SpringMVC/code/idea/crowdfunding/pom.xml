@@ -28,7 +28,7 @@
         <mybatis.version>3.5.6</mybatis.version>
         <log4j.version>1.7.30</log4j.version>
         <mysql.version>8.0.19</mysql.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
